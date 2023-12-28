@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Writeup - Information Leak</title>
-<!-- Incluir Bootstrap CSS -->
+<title>Writeup - Information Leak in Bank's Mobile App</title>
+<!-- Include Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<!-- Incluir tu CSS personalizado -->
+<!-- Include your custom CSS -->
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <div class="container mt-5">
     <div class="jumbotron">
-        <h1 class="display-4">Writeup sobre Information Leak</h1>
-        <p class="lead">Aquí puedes leer todos los detalles sobre el information leak que encontré.</p>
+        <h1 class="display-4">Sensitive Information Exposure in Bank's Mobile App</h1>
+        <p class="lead">Details about the vulnerability discovered in the XYZ Bank's mobile app that exposes critical information without proper authentication.</p>
         <hr class="my-4">
-        <p>Detalles, análisis y conclusiones...</p>
+        
+        <h2>Vulnerability Overview</h2>
+        <p>
+            During my research, I found that the XYZ Bank's mobile application exposes critical information such as transaction summaries and other financial details of each user. The concerning aspect is that this information can be accessed without adequate authentication.
+        </p>
+        
+        <h2>How is Access Possible Without Authentication?</h2>
+        <p>
+            The authentication system of the app uses the user's national identification number as part of the verification process. However, through reverse engineering techniques and penetration testing, it was determined that it's possible to access the information using only the national ID number without the need for additional authentication credentials.
+        </p>
+        
+        <h2>Implications and Recommendations</h2>
+        <p>
+            This vulnerability poses a significant risk to user privacy and security. It's recommended for XYZ Bank to take immediate action to address this security flaw, implementing a more robust authentication system and conducting a thorough review of their systems to identify potential additional breaches.
+        </p>
+        
+        <h2>Conclusion</h2>
+        <p>
+            The exposure of sensitive information without proper authentication in the XYZ Bank's mobile application is a severe security issue that requires immediate attention. It's essential to take the necessary measures to protect user privacy and security.
+        </p>
     </div>
 </div>
 
-<!-- Incluir Bootstrap JS y jQuery -->
+<!-- Include Bootstrap JS and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
