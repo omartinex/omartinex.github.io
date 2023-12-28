@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Writeup - Information Leak in Bank's Mobile App</title>
+<title>Writeup - Easy Information Leak in Bank's Mobile App</title>
 <!-- Include Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <!-- Include your custom CSS -->
@@ -12,29 +12,29 @@
 
 <div class="container mt-5">
     <div class="jumbotron">
-        <h1 class="display-4">Sensitive Information Exposure in Bank's Mobile App</h1>
-        <p class="lead">Details about the vulnerability discovered in the XYZ Bank's mobile app that exposes critical information without proper authentication.</p>
+        <h1 class="display-4">A Simple Trick: Accessing Bank Data with Just a Number</h1>
+        <p class="lead">It's surprising how some vulnerabilities are as easy as knowing a number. Let's dive into this straightforward trick in the XYZ Bank's mobile app.</p>
         <hr class="my-4">
         
-        <h2>Vulnerability Overview</h2>
+        <h2>The Trick Revealed</h2>
         <p>
-            During my research, I found that the XYZ Bank's mobile application exposes critical information such as transaction summaries and other financial details of each user. The concerning aspect is that this information can be accessed without adequate authentication.
+            So, here's the low-hanging fruit in the world of hacking. If you know a user's national ID number, say "12345678," you can get their data by encoding it in Base64 with the prefix "01-". That's it! It's as simple as that.
         </p>
         
-        <h2>How is Access Possible Without Authentication?</h2>
+        <h2>Why This Matters</h2>
         <p>
-            The authentication system of the app uses the user's national identification number as part of the verification process. However, through reverse engineering techniques and penetration testing, it was determined that it's possible to access the information using only the national ID number without the need for additional authentication credentials.
+            While the data might not be super sensitive, it's concerning how such a straightforward method can grant access. It's a wake-up call for institutions like XYZ Bank to tighten their security, even for seemingly minor details.
         </p>
         
-        <h2>Implications and Recommendations</h2>
+        <h2>Low-Hanging Fruits in Security</h2>
         <p>
-            This vulnerability poses a significant risk to user privacy and security. It's recommended for XYZ Bank to take immediate action to address this security flaw, implementing a more robust authentication system and conducting a thorough review of their systems to identify potential additional breaches.
+            This is a classic example of how some vulnerabilities are like low-hanging fruits. They're easy to spot and exploit, reminding us all to stay vigilant and not overlook even the simplest of issues.
         </p>
         
-        <h2>Conclusion</h2>
-        <p>
-            The exposure of sensitive information without proper authentication in the XYZ Bank's mobile application is a severe security issue that requires immediate attention. It's essential to take the necessary measures to protect user privacy and security.
-        </p>
+        <!-- Image references (adjust filenames accordingly after uploading) -->
+        <h2>Visual Aid</h2>
+        <img src="images/base64_encode.png" alt="Base64 Encoding Example" class="img-fluid mb-3">
+        <p>Example: Base64 encoding a national ID.</p>
     </div>
 </div>
 
