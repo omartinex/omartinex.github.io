@@ -1,0 +1,12 @@
+/* Agrega cualquier estilo adicional que desees aquí */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.jumbotron {
+    background-color: #f8f9fa; /* Cambia el color de fondo si lo deseas */
+}
