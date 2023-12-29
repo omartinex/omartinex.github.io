@@ -6,45 +6,55 @@
 <!-- Include Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <!-- Include your custom CSS -->
-<link rel="stylesheet" href="css/styles.css">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .jumbotron {
+        max-width: 800px;
+    }
+</style>
 </head>
 <body>
 
 <div class="container mt-5">
     <div class="jumbotron">
-        <h1 class="display-4">A Simple Trick: Accessing Bank Data with Just a Number</h1>
-        <p class="lead">Discover how a simple Base64 encoding trick lets you access user data in Daviplata's app.</p>
+        <h1 class="display-4 text-center">A Simple Trick: Accessing Bank Data with Just a Number</h1>
+        <p class="lead text-center">Discover how a simple Base64 encoding trick lets you access some user data in Daviplata's app.</p>
         <hr class="my-4">
 
-        <div class="row">
+        <div class="row mb-4">
             <!-- Step 1: Encode in Base64 -->
-            <div class="col-md-6">
+            <div class="col-md-12 mb-4 text-center">
                 <h2>Step 1: Encode in Base64</h2>
                 <p>
                     First things first, let's encode the string "01-0123456789" in Base64. This will give us an encoded string that we'll use later.
                 </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 mb-4 text-center">
                 <img src="images/6.png" alt="Step 1: Base64 Encoding" class="img-fluid mb-3">
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-4">
             <!-- Step 2: Craft the URL -->
-            <div class="col-md-6 order-md-2">
+            <div class="col-md-12 mb-4 text-center">
                 <h2>Step 2: Craft the URL</h2>
                 <p>
                     Once you have the encoded string, use it to craft the URL patterned like: <br>
                     <code>https://comunicaciones.davivienda.com/relacion-daviplata?u=ENCODEDSTRING</code>
                 </p>
             </div>
-            <div class="col-md-6 order-md-1">
+            <div class="col-md-12 mb-4 text-center">
                 <img src="images/5.png" alt="Step 2: Crafting URL" class="img-fluid mb-3">
             </div>
         </div>
 
-        <h2>Why This Matters</h2>
-        <p>
+        <h2 class="text-center">Why This Matters</h2>
+        <p class="text-center">
             The ease with which one can manipulate this data underscores the importance of even simple security checks. It's a reminder for institutions like Daviplata to be thorough in their security measures.
         </p>
     </div>
