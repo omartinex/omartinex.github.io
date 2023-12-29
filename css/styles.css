@@ -10,10 +10,3 @@ body {
 .jumbotron {
     background-color: #f8f9fa; /* Cambia el color de fondo si lo deseas */
 }
-
-/* Ajusta el ancho del contenedor principal o del body para pantallas grandes */
-@media (min-width: 992px) {
-    .container, body {
-        max-width: 1200px; /* o cualquier otro valor que prefieras */
-    }
-}
