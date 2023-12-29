@@ -15,10 +15,17 @@
         <h1 class="display-4">A Simple Trick: Accessing Bank Data with Just a Number</h1>
         <p class="lead">Discover how a simple Base64 encoding trick lets you access user data in Daviplata's mobile app.</p>
         <hr class="my-4">
+
+        <h2>How is Access Possible Without Authentication?</h2>
+        <p>
+            If you know the user's national identification number (cedula de ciudadania) you can get his/her anual summary. It's possible to access the information using only the national ID number without the need for additional authentication credentials.
+
+            <p>Just like Spotify's wrapped, Daviplata has implemented a service that displays some information about your transactions for the year. This service only needs a user's identification number, and it will show you their annual summary.</p>
+        </p>
         
         <h2>Step 1: Encode in Base64</h2>
         <p>
-            First things first, let's encode the string "01-0123456789" in Base64. This will give us an encoded string that we'll use later.
+            First things first, let's encode the string "01-0123456789" (where 0123456789 is the ID of the user) in Base64. This will give us an encoded string that we'll use later.
         </p>
         <img src="images/6.png" alt="Step 1: Base64 Encoding" class="img-fluid mb-3">
         
